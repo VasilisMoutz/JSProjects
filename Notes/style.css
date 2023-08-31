@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(46, 32, 46);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+}
+
+.noteapp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 400px;
+    background-color: rgb(196, 196, 196);
+    height: 600px;
+    overflow: scroll;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(129, 20, 71);
+    color: rgb(207, 199, 200);
+    padding: 1.2em;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+
+
+.inputArea {
+    height: 5em;
+    width: 400px;
+    background-color: rgb(129, 20, 71);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+input[type="text"] {
+    height: 3em;
+    flex: 2;
+    margin: 0 0.5em;
+    border: none;
+    padding: 1em;
+    border-radius: 9px;
+    font-size: 0.9em;
+}
+
+button {
+    width: 3.3em;
+    height: 3.3em;
+    margin: 0 0.5em;
+    border-radius: 50%;
+    border: none;
+}
+
+.note {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    border-radius: 5px;
+    padding: 1em 0.5em;
+    margin: 1em auto 0;
+}
+
+.note label {
+    width: 80%;
+    padding: 1em;
+}
+
+input {
+    accent-color: rgb(5, 95, 95);
+    width: 25px;
+    height: 25px;
+}
+
+.note button {
+    background-image: url(./img/x.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: grey;
+}
+
+
